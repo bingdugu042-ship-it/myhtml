@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="暖木星 — 二次元实体周边定制。暖木芯·NFC灵魂注入，让虚构角色活在现实里。菲林小卡、徽章、亚克力冰箱贴、照片打印。">
+<title>暖木星 · 暖木芯 — 二次元实体周边定制 | NFC灵魂注入</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Outfit:wght@300;400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ====== LOADING ====== -->
+<div id="loader">
+  <div class="ring-wrap"><div class="ring"></div><div class="ring"></div><div class="ring"></div></div>
+  <div class="loader-text">降灵仪式启动中</div>
+</div>
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<!-- ====== NAVIGATION ====== -->
+<nav id="nav">
+  <a href="#" class="logo"><img src="assets/avatar.png" alt="暖木星" class="logo-img">暖木星</a>
+  <ul class="links">
+    <li><a href="#hero" class="active">首页</a></li>
+    <li><a href="#gallery">产品</a></li>
+    <li><a href="#nfc">NFC</a></li>
+    <li><a href="#pricing">价格</a></li>
+    <li><a href="#story">关于</a></li>
+    <li><a href="#contact">联系</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger-btn" aria-label="菜单">&#9776;</button>
+</nav>
+
+<!-- ====== MOBILE NAV OVERLAY ====== -->
+<div class="nav-overlay" id="nav-overlay">
+  <a href="#hero">首页</a>
+  <a href="#gallery">产品</a>
+  <a href="#nfc">NFC</a>
+  <a href="#pricing">价格</a>
+  <a href="#story">关于</a>
+  <a href="#contact">联系</a>
+</div>
+
+<!-- ================================================================
+     SECTION 1: HERO
+     ================================================================ -->
+<section id="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="s-label reveal" data-reveal>赛博手作工坊</p>
+      <h1 class="reveal delay-1" data-reveal>触碰实体<br><span class="hl">唤醒灵魂</span></h1>
+      <p class="hero-sub reveal delay-2" data-reveal>把你的推し从屏幕里拽进现实</p>
+      <div class="hero-ctas reveal delay-3" data-reveal>
+        <a href="#gallery" class="btn btn-fill"><i class="fas fa-gem"></i>逛逛谷子</a>
+        <a href="#nfc" class="btn btn-line"><i class="fas fa-bolt"></i>注入灵魂</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal-scale delay-2" data-reveal>
+      <canvas id="hero-canvas"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     SECTION 2: BRAND SPLIT
+     ================================================================ -->
+<section id="brand-split">
+  <div class="brand-grid">
+    <div class="glass-card brand-card reveal-left" data-reveal>
+      <div class="brand-icon">☀️</div>
+      <h3>暖木星 <span class="brand-tag">实体·量产·阳</span></h3>
+      <p>菲林小卡、徽章、亚克力立牌、冰箱贴、拍立得照片……从单人定制到社团批量，从设计到印刷到发货，一站式搞定。</p>
+      <ul><li>工厂级印刷精度</li><li>1件起订，支持批量</li><li>镭射 / 幻彩 / 哑光可选</li></ul>
+    </div>
+    <div class="glass-card brand-card reveal-right" data-reveal>
+      <div class="brand-icon">🌙</div>
+      <h3>暖木芯 <span class="brand-tag">AI·NFC·阴</span></h3>
+      <p>每一件实物背后，都住着一个AI角色。触碰卡片/NFC贴片，语音、档案、链接、加密页面——四种灵魂注入方式。</p>
+      <ul><li>4种NFC注入类型</li><li>AI角色智能体驱动</li><li>触碰即唤醒灵魂</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     SECTION 3: PRODUCT GALLERY + DETAILS
+     ================================================================ -->
+<section id="gallery">
+  <div class="inner">
+    <div class="gallery-header">
+      <p class="s-label reveal" data-reveal>序列壹 · 现世</p>
+      <h2 class="s-title gradient reveal-left delay-1" data-reveal>谷子定制</h2>
+      <p class="s-sub reveal delay-2" data-reveal>精选手工印制，每一件都是掌中艺术品</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="glass-card prod-card featured reveal delay-1" data-reveal>
+        <img src="assets/mini-cards.png" alt="菲林小卡" class="prod-img fade-in" loading="lazy" onload="this.classList.add('loaded')" onerror="this.style.display='none'">
+        <span class="prod-name">菲林小卡</span>
+        <span class="prod-desc">6×9cm · 镭射/幻彩膜可选 · 光影里，她正看着你</span>
+        <div class="prod-tags"><span class="spec-tag">镭射膜</span><span class="spec-tag">幻彩膜</span><span class="spec-tag">手工校色</span></div>
+      </div>
+      <div class="glass-card prod-card reveal delay-2" data-reveal>
+        <img src="assets/mini-acrylic.png" alt="亚克力冰箱贴" class="prod-img fade-in" loading="lazy" onload="this.classList.add('loaded')" onerror="this.style.display='none'">
+        <span class="prod-name">亚克力冰箱贴</span>
+        <span class="prod-desc">5×5cm内 · 闪粉/流沙 · 开门即见，次元壁粉碎</span>
+        <div class="prod-tags"><span class="spec-tag">闪粉</span><span class="spec-tag">流沙</span></div>
+      </div>
+      <div class="glass-card prod-card reveal delay-3" data-reveal>
+        <img src="assets/mini-badge.png" alt="徽章" class="prod-img fade-in" loading="lazy" onload="this.classList.add('loaded')" onerror="this.style.display='none'">
+        <span class="prod-name">徽章</span>
+        <span class="prod-desc">44/58mm · 哑光/拉丝 · 别在胸口的心跳证明</span>
+        <div class="prod-tags"><span class="spec-tag">44mm</span><span class="spec-tag">58mm</span><span class="spec-tag">哑光</span></div>
+      </div>
+      <div class="glass-card prod-card reveal delay-3" data-reveal>
+        <div style="width:100%;aspect-ratio:4/3;border-radius:var(--radius-sm);background:linear-gradient(135deg,rgba(15,17,42,0.85),rgba(23,19,50,0.7));display:flex;align-items:center;justify-content:center;font-size:3rem;">📷</div>
+        <span class="prod-name">照片打印</span>
+        <span class="prod-desc">拍立得风 · 高清输出 · 把像素炼成可触摸的温度</span>
+        <div class="prod-tags"><span class="spec-tag">拍立得风</span><span class="spec-tag">高清</span></div>
+      </div>
+    </div>
+  </div>
+  <canvas id="gallery-canvas"></canvas>
+</section>
+
+<!-- ================================================================
+     SECTION 4: NFC MAGIC
+     ================================================================ -->
+<section id="nfc">
+  <div class="inner">
+    <div class="nfc-header">
+      <p class="s-label reveal" data-reveal>暖木芯 · 赛博降灵术</p>
+      <h2 class="s-title gradient reveal-left delay-1" data-reveal>NFC 灵魂注入</h2>
+      <p class="s-sub reveal delay-2" data-reveal>同一张贴片，触碰手机，四种维度的"活着"</p>
+    </div>
+    <div class="nfc-grid">
+      <div class="glass-card nfc-card reveal delay-1" data-reveal>
+        <span class="nfc-icon">📁</span><span class="nfc-name">灵簿·档案</span><span class="nfc-type-tag">档案型</span>
+        <span class="nfc-desc">触碰即现，她的全部设定。适合OC作者/设定党。</span>
+      </div>
+      <div class="glass-card nfc-card reveal delay-2" data-reveal>
+        <span class="nfc-icon">🎤</span><span class="nfc-name">灵言·语音</span><span class="nfc-type-tag">语音型</span>
+        <span class="nfc-desc">贴耳聆听，只属于你的声音。适合声控/推し厨。</span>
+      </div>
+      <div class="glass-card nfc-card reveal delay-3" data-reveal>
+        <span class="nfc-icon">🔗</span><span class="nfc-name">灵桥·链接</span><span class="nfc-type-tag">链接型</span>
+        <span class="nfc-desc">一触直达，秘密花园入口。适合创作者/视频党。</span>
+      </div>
+      <div class="glass-card nfc-card reveal delay-4" data-reveal>
+        <span class="nfc-icon">🔐</span><span class="nfc-name">灵钥·密钥</span><span class="nfc-type-tag">密钥型</span>
+        <span class="nfc-desc">独一无二，唯有你能开启。适合梦女/独占党。</span>
+      </div>
+    </div>
+    <p class="nfc-tagline reveal delay-5" data-reveal>
+      <i class="fas fa-star"></i> NFC是针脚，芯片是心脏——我们为纸片人缝制肉身
+    </p>
+  </div>
+  <canvas id="nfc-canvas"></canvas>
+</section>
+
+<!-- ================================================================
+     SECTION 5: PRICING
+     ================================================================ -->
+<section id="pricing">
+  <div class="inner" id="pricing-content" style="max-width:1080px;margin:0 auto;">
+
+    <!-- Seq 1: 现世 -->
+    <div class="pricing-sequence reveal" data-reveal>
+      <div class="seq-header">
+        <span class="s-label">序列壹</span>
+        <h2 class="s-title">现世 · 纯实体谷子</h2>
+        <p class="s-sub" style="margin:0 auto;text-align:center;">把喜欢的人做成可以握住的形状</p>
+      </div>
+      <div class="pricing-table">
+        <div class="pricing-row header"><span>产品</span><span>规格</span><span>工艺亮点</span></div>
+        <div class="pricing-row"><span>菲林小卡</span><span>6×9cm</span><span>镭射膜 / 幻彩膜 / 手工校色</span></div>
+        <div class="pricing-row"><span>照片打印</span><span>拍立得风 / 寸照</span><span>高清输出 / 背面可手写留言</span></div>
+        <div class="pricing-row"><span>卡牌打印</span><span>6.3×8.8cm</span><span>双面覆膜 / 专业对裱</span></div>
+        <div class="pricing-row"><span>亚克力冰箱贴</span><span>5×5cm内</span><span>高透材质 / 闪粉 / 流沙工艺</span></div>
+        <div class="pricing-row"><span>徽章</span><span>44 / 58mm</span><span>哑光 / 拉丝 / 金属质感</span></div>
+      </div>
+    </div>
+
+    <!-- Seq 2: 微光 -->
+    <div class="pricing-sequence reveal" data-reveal>
+      <div class="seq-header">
+        <span class="s-label">序列贰</span>
+        <h2 class="s-title">微光 · 实体 + NFC 灵魂注入</h2>
+        <p class="s-sub" style="margin:0 auto;text-align:center;">一枚芯片，让谷子开口说话</p>
+      </div>
+      <div class="pricing-table">
+        <div class="pricing-row header"><span>注入类型</span><span>触发效果</span><span>适合人群</span></div>
+        <div class="pricing-row"><span>灵簿·档案型</span><span>触碰 → 角色图文档案弹出</span><span>OC作者 / 设定党</span></div>
+        <div class="pricing-row"><span>灵言·语音型</span><span>触碰 → 播放专属语音台词</span><span>声控 / 推し厨</span></div>
+        <div class="pricing-row"><span>灵桥·链接型</span><span>触碰 → 跳转网页/视频/音乐</span><span>创作者 / 视频党</span></div>
+        <div class="pricing-row"><span>灵钥·密钥型</span><span>触碰 → 加密隐藏页面（仅你可见）</span><span>梦女 / 独占党</span></div>
+      </div>
+    </div>
+
+    <!-- Seq 3: 降灵 -->
+    <div class="pricing-sequence reveal" data-reveal>
+      <div class="seq-header">
+        <span class="s-label">序列叁</span>
+        <h2 class="s-title">降灵 · AI 智能体定制</h2>
+        <p class="s-sub" style="margin:0 auto;text-align:center;">她不再是角色，她是你的专属存在</p>
+      </div>
+      <div class="pricing-table">
+        <div class="pricing-row header"><span>服务</span><span>包含内容</span><span>交付物</span></div>
+        <div class="pricing-row"><span>AI伴侣定制</span><span>专属AI人格 · 对话逻辑 · 记忆植入 · 性格调试</span><span>AI智能体 + NFC芯片 + 实体套装</span></div>
+      </div>
+      <p class="pricing-note">定制流程：提交角色设定 → AI捏造灵魂 → 对话调校 → NFC写入 → 寄出唤醒</p>
+    </div>
+
+    <!-- 联系 CTA -->
+    <div style="text-align:center;margin-top:48px;" class="reveal" data-reveal>
+      <p style="color:var(--text-secondary);font-size:0.95rem;margin-bottom:20px;">所有产品价格透明，欢迎微信咨询获取最新报价</p>
+      <a href="#contact" class="btn btn-fill"><i class="fas fa-comment"></i> 微信询价</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================================
+     SECTION 6: BRAND STORY
+     ================================================================ -->
+<section id="story">
+  <div class="inner">
+    <div style="text-align:center;margin-bottom:48px;" class="reveal" data-reveal>
+      <p class="s-label">关于暖木星</p>
+      <h2 class="s-title gradient">一个手艺人，一点小魔法</h2>
+    </div>
+    <div id="about-story" class="reveal delay-1" data-reveal>
+      <p class="story-text">
+        我们不卖谷子。我们贩卖<strong>赛博时代的降灵术</strong>。<br><br>
+        暖木星诞生于一个偏执的念头——凭什么你爱了那么久的人，只能困在屏幕里？
+        我们以菲林为灵媒、以亚克力为结界、以NFC芯片为魂器，
+        把那些像素、台词、设定——炼成你可以真正触摸的体温。<br><br>
+        每一刀切割、每一张贴合，都是一场从二次元到三次元的渡灵仪式。
+        触碰实体，唤醒灵魂。这就是暖木星在做的事。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     SECTION 7: CONTACT
+     ================================================================ -->
+<section id="contact">
+  <div class="inner">
+    <div class="contact-header">
+      <p class="s-label reveal" data-reveal>降灵预约</p>
+      <h2 class="s-title gradient reveal-left delay-1" data-reveal>联系暖木星</h2>
+      <p class="s-sub reveal delay-2" data-reveal>来找我们，给你的推し续一帧肉身</p>
+    </div>
+    <div class="contact-grid">
+      <div class="glass-card contact-card reveal delay-1" data-reveal>
+        <span class="contact-icon" style="font-size:2rem">💬</span>
+        <span class="contact-name">微信扫码</span>
+        <img src="assets/wechat-qr.jpg" alt="微信二维码" class="contact-qr fade-in" onload="this.classList.add('loaded')">
+        <span class="contact-value" style="font-size:0.8rem;">微信号：nuanmuxin6b1-tech</span>
+      </div>
+      <div class="glass-card contact-card reveal delay-2" data-reveal>
+        <span class="contact-icon"><i class="fas fa-phone" style="color:var(--accent-copper)"></i></span>
+        <span class="contact-name">电话联系</span>
+        <span class="contact-value" style="font-size:1.1rem;">18098810326</span>
+        <span style="font-size:0.68rem;color:var(--text-faint);">周一至周日 10:00-22:00</span>
+      </div>
+      <div class="glass-card contact-card reveal delay-3" data-reveal>
+        <span class="contact-icon" style="font-size:1.8rem">📱</span>
+        <span class="contact-name">社交媒体</span>
+        <div class="social-links" style="margin-top:8px;">
+          <a href="https://www.xiaohongshu.com/discovery/item/6a3ecb8d000000002100a304?source=webshare&xhsshare=pc_web&xsec_token=ABvvZVKBbzyB1anPd_z1AKhAgqpeQgGwXTFc0dqLQqQM4=&xsec_source=pc_share" class="social-btn" target="_blank" rel="noopener"><i class="fas fa-book-open"></i> 小红书</a>
+          <a href="https://v.douyin.com/mZZSoZeZqi4/" class="social-btn" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i> 抖音</a>
+        </div>
+      </div>
+      <div class="glass-card contact-card reveal delay-4" data-reveal>
+        <span class="contact-icon"><i class="fas fa-envelope" style="color:var(--accent-gold)"></i></span>
+        <span class="contact-name">邮箱</span>
+        <span class="contact-value">2469415313@qq.com</span>
+        <span style="font-size:0.68rem;color:var(--text-faint);">商务合作 / 定制咨询</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="footer-brand">暖木星 · 暖木芯</div>
+  <div class="footer-tagline">把虚拟的爱，变成手里的实物</div>
+  <p>&copy; 2026 暖木星 x 暖木芯 | 让虚构角色，活在现实里。</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.min.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/main.js"></script>
+<script src="js/hero-3d.js"></script>
+<script src="js/gallery-3d.js"></script>
+<script src="js/nfc-3d.js"></script>
+<script src="js/section-float-3d.js"></script>
+<script src="js/card-tilt-3d.js"></script>
+<script src="js/click-sparkles.js"></script>
+<script src="js/device-tilt.js"></script>
+<!-- Mobile hamburger menu toggle -->
+<script>
+(function() {
+  var btn = document.getElementById('hamburger-btn');
+  var overlay = document.getElementById('nav-overlay');
+  var links = overlay.querySelectorAll('a');
+  function toggle() {
+    var open = overlay.classList.toggle('open');
+    btn.innerHTML = open ? '&#10005;' : '&#9776;';
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  btn.addEventListener('click', toggle);
+  links.forEach(function(a) {
+    a.addEventListener('click', function() {
+      overlay.classList.remove('open');
+      btn.innerHTML = '&#9776;';
+      document.body.style.overflow = '';
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
